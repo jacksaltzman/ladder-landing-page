@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Ladder</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style>
@@ -12,15 +12,24 @@
             box-sizing: border-box;
         }
         
-        html, body {
+        html {
             height: 100%;
+            touch-action: manipulation;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
         
         body {
+            height: 100%;
             background-color: #fff5e1;
             display: flex;
             justify-content: center;
             align-items: center;
+            touch-action: manipulation;
         }
         
         .logo-container {
