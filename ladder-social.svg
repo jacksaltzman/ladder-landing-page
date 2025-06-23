@@ -1,6 +1,6 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <rect width="1200" height="630" fill="#fff5e1"/>
-  <g transform="translate(500, 165) scale(1.5)">
+  <g transform="translate(450, 90) scale(1.5)">
     <!-- Left rail -->
     <rect x="50" y="20" width="27" height="260" rx="13.5" fill="#114934" transform="rotate(9 63.5 150)"/>
     
