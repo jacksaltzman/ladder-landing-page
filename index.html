@@ -36,6 +36,7 @@
             justify-content: center;
             align-items: center;
             touch-action: manipulation;
+            position: relative;
         }
         
         .logo-container {
@@ -61,6 +62,24 @@
             .logo-container svg {
                 max-width: 120px;
                 max-height: 180px;
+            }
+        }
+        
+        .launch-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #114934;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 480px) {
+            .launch-text {
+                font-size: 14px;
+                bottom: 15px;
+                left: 15px;
             }
         }
     </style>
@@ -94,6 +113,11 @@
             <rect x="67" y="173" width="89" height="21" fill="#114934" transform="rotate(1 142.5 183.5)"/>
             <rect x="42" y="233" width="89" height="21" fill="#114934" transform="rotate(1 117.5 243.5)"/>
         </svg>
+    </div>
+    
+    <div class="launch-text">
+        Launching soon.<br>
+        Contact: hello@ladderbenefits.com
     </div>
 </body>
 </html>
