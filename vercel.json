@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/snap", "destination": "/snap/index.html" }
+  ]
+}
