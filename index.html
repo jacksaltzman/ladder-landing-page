@@ -44,31 +44,22 @@
             max-height: 90vh;
         }
         
-        .logo-container .logo-mask {
+        .logo-container img {
             width: 100%;
+            height: auto;
             max-width: 500px;
-            aspect-ratio: 2429 / 892;
-            background-color: #231f20;
-            -webkit-mask-image: url('logo_png.png');
-            mask-image: url('logo_png.png');
-            -webkit-mask-size: contain;
-            mask-size: contain;
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-            -webkit-mask-position: center;
-            mask-position: center;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: opacity 0.3s ease;
         }
 
         @media (max-width: 480px) {
-            .logo-container .logo-mask {
+            .logo-container img {
                 max-width: 300px;
             }
         }
 
         @media (max-width: 320px) {
-            .logo-container .logo-mask {
+            .logo-container img {
                 max-width: 250px;
             }
         }
@@ -94,16 +85,23 @@
 </head>
 <body>
     <div class="logo-container">
-        <div class="logo-mask" id="logo"></div>
+        <img src="logo_png.png" alt="Ladder" id="logo">
     </div>
     <script>
         const logo = document.getElementById('logo');
-        const colors = ['#83D3E6', '#55CB79', '#FFD55B', '#E68DDB', '#D9B893', '#231f20'];
-        let currentColorIndex = 5; // Start with black
+        const logos = [
+            'logo_light-blue.png',
+            'logo_green.png',
+            'logo_yellow.png',
+            'logo_pink.png',
+            'logo_tan.png',
+            'logo_png.png'  // Original black
+        ];
+        let currentLogoIndex = 5; // Start with black
 
         logo.addEventListener('click', function() {
-            currentColorIndex = (currentColorIndex + 1) % colors.length;
-            logo.style.backgroundColor = colors[currentColorIndex];
+            currentLogoIndex = (currentLogoIndex + 1) % logos.length;
+            logo.src = logos[currentLogoIndex];
         });
     </script>
     
