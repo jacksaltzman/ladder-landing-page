@@ -48,8 +48,6 @@
             width: 100%;
             height: auto;
             max-width: 500px;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
         }
 
         @media (max-width: 480px) {
@@ -85,25 +83,8 @@
 </head>
 <body>
     <div class="logo-container">
-        <img src="logo_png.png" alt="Ladder" id="logo">
+        <img src="logo_png.png" alt="Ladder">
     </div>
-    <script>
-        const logo = document.getElementById('logo');
-        const logos = [
-            'logo_color1.png',  // #73BBC6
-            'logo_color2.png',  // #44B467
-            'logo_color3.png',  // #E9C86A
-            'logo_color4.png',  // #CF80C5
-            'logo_color5.png',  // #BC9871
-            'logo_png.png'      // Original black
-        ];
-        let currentLogoIndex = 5; // Start with black
-
-        logo.addEventListener('click', function() {
-            currentLogoIndex = (currentLogoIndex + 1) % logos.length;
-            logo.src = logos[currentLogoIndex];
-        });
-    </script>
     
     <div class="launch-text">
         Get what's yours.<br>
