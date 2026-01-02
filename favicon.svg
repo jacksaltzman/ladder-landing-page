@@ -1,13 +1,3 @@
-<svg width="32" height="32" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- Left rail -->
-  <rect x="50" y="20" width="27" height="260" rx="13.5" fill="#114934" transform="rotate(9 63.5 150)"/>
-  
-  <!-- Right rail -->
-  <rect x="139" y="20" width="27" height="260" rx="13.5" fill="#114934" transform="rotate(9 152.5 150)"/>
-  
-  <!-- Rungs -->
-  <rect x="67" y="53" width="89" height="21" fill="#114934" transform="rotate(1 142.5 63.5)"/>
-  <rect x="67" y="113" width="89" height="21" fill="#114934" transform="rotate(1 142.5 123.5)"/>
-  <rect x="67" y="173" width="89" height="21" fill="#114934" transform="rotate(1 142.5 183.5)"/>
-  <rect x="42" y="233" width="89" height="21" fill="#114934" transform="rotate(1 117.5 243.5)"/>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="6" fill="#FD6440"/>
 </svg>
